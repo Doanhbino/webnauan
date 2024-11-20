@@ -1,0 +1,145 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Đặt chung cho toàn bộ trang */
+body {
+    font-family: 'Open Sans', Arial, sans-serif; /* Font chữ chính */
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd; /* Nền sáng */
+    color: #333; /* Màu chữ đậm hơn */
+    line-height: 1.6; /* Khoảng cách dòng dễ đọc */
+    letter-spacing: 0.5px; /* Thêm khoảng cách giữa các ký tự */
+    overflow-x: hidden; /* Vô hiệu hóa thanh cuộn ngang */
+}
+
+/* Header của trang */
+header {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử */
+    justify-content: space-between; /* Đặt khoảng cách giữa các phần tử */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Hiệu ứng gradient xanh dương */
+    color: white;
+    padding: 15px 30px; /* Thêm khoảng cách cho các phần tử */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Đổ bóng tinh tế */
+    position: sticky; /* Cố định trên cùng khi cuộn */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Lora', serif; /* Font chữ sang trọng cho tiêu đề */
+    font-size: 28px; /* Giảm kích thước để cân đối với các phần khác */
+    font-weight: 700;
+    letter-spacing: 1px; /* Thêm khoảng cách giữa các ký tự trong tiêu đề */
+    line-height: 1.2; /* Giảm khoảng cách giữa các dòng */
+    text-transform: uppercase; /* Viết hoa để tạo sự nổi bật */
+}
+
+nav {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các liên kết */
+    align-items: center; /* Căn chỉnh các liên kết theo chiều dọc */
+}
+
+nav a {
+    color: #ffd700; /* Màu vàng ánh kim */
+    text-decoration: none;
+    margin: 0 12px; /* Điều chỉnh khoảng cách giữa các liên kết */
+    font-weight: 600; /* Đậm hơn để nổi bật */
+    font-size: 16px; /* Điều chỉnh kích thước chữ cho cân đối */
+    font-family: 'Open Sans', sans-serif; /* Font chữ mới cho các liên kết */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Hiệu ứng mượt */
+    text-transform: capitalize; /* Viết hoa chữ cái đầu */
+}
+
+nav a:hover {
+    color: white; /* Màu trắng khi hover */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Tạo hiệu ứng sáng mạnh hơn */
+}
+/* Đặt lại toàn bộ form */
+form {
+    background-color: #ffffff; /* Nền trắng cho form */
+    padding: 20px; /* Khoảng cách xung quanh nội dung form */
+    border-radius: 8px; /* Bo tròn góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho form */
+    margin: 30px auto;
+    max-width: 900px; /* Giới hạn chiều rộng của form */
+}
+
+/* Tiêu đề của form */
+h2 {
+    font-family: 'Lora', serif; /* Font chữ đẹp cho tiêu đề */
+    font-size: 24px; /* Kích thước vừa phải */
+    font-weight: 700;
+    color: #333; /* Màu chữ đậm */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    text-align: center; /* Căn giữa */
+    margin-top: 30px;
+}
+
+/* Các label trong form */
+label {
+    font-weight: 600; /* Làm cho chữ label đậm */
+    margin-bottom: 8px; /* Khoảng cách giữa label và input */
+    display: block; /* Hiển thị label trên một dòng riêng */
+    font-size: 16px; /* Kích thước chữ cho label */
+}
+
+/* Input và Select trong form */
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%; /* Đảm bảo các trường chiếm toàn bộ chiều rộng */
+    padding: 12px; /* Khoảng cách trong input */
+    margin-bottom: 15px; /* Khoảng cách giữa các trường */
+    border: 1px solid #ccc; /* Viền mờ */
+    border-radius: 4px; /* Bo góc cho các input */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    font-size: 16px; /* Kích thước chữ bên trong input */
+    font-family: 'Open Sans', sans-serif; /* Font chữ cho input */
+}
+
+/* Các textarea */
+textarea {
+    height: 150px; /* Chiều cao cho textarea */
+    resize: vertical; /* Cho phép chỉnh sửa chiều cao */
+}
+
+/* Nút submit */
+input[type="submit"] {
+    background-color: #007bff; /* Màu xanh giống header */
+    color: white; /* Chữ màu trắng */
+    border: none; /* Loại bỏ viền */
+    padding: 12px 20px; /* Khoảng cách trong nút */
+    border-radius: 4px; /* Bo góc cho nút */
+    font-size: 16px; /* Kích thước chữ cho nút */
+    font-weight: 600; /* Đậm hơn */
+    cursor: pointer; /* Thêm con trỏ khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+    margin-left:350px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Màu khi hover */
+}
+
+/* Điều chỉnh Select2 */
+.select2-container {
+    width: 100% !important; /* Đảm bảo chiều rộng của Select2 */
+}
+
+/* Các bước nấu */
+textarea {
+    resize: vertical;
+}
+
+/* Điều chỉnh cho các lựa chọn nguyên liệu */
+#nguyenLieu {
+    width: 100% !important;
+}
+
+/* Các thông báo lỗi */
+.alert {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

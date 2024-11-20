@@ -1,0 +1,184 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Đặt chung cho toàn bộ trang */
+body {
+    font-family: 'Open Sans', Arial, sans-serif; /* Font chữ chính */
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd; /* Nền sáng */
+    color: #333; /* Màu chữ đậm hơn */
+    line-height: 1.6; /* Khoảng cách dòng dễ đọc */
+    letter-spacing: 0.5px; /* Thêm khoảng cách giữa các ký tự */
+}
+
+/* Header của trang */
+header {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử */
+    justify-content: space-between; /* Đặt khoảng cách giữa các phần tử */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Hiệu ứng gradient xanh dương */
+    color: white;
+    padding: 15px 30px; /* Thêm khoảng cách cho các phần tử */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Đổ bóng tinh tế */
+    position: sticky; /* Cố định trên cùng khi cuộn */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Lora', serif; /* Font chữ sang trọng cho tiêu đề */
+    font-size: 28px; /* Giảm kích thước để cân đối với các phần khác */
+    font-weight: 700;
+    letter-spacing: 1px; /* Thêm khoảng cách giữa các ký tự trong tiêu đề */
+    line-height: 1.2; /* Giảm khoảng cách giữa các dòng */
+    text-transform: uppercase; /* Viết hoa để tạo sự nổi bật */
+}
+
+nav {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các liên kết */
+    align-items: center; /* Căn chỉnh các liên kết theo chiều dọc */
+}
+
+nav a {
+    color: #ffd700; /* Màu vàng ánh kim */
+    text-decoration: none;
+    margin: 0 12px; /* Điều chỉnh khoảng cách giữa các liên kết */
+    font-weight: 600; /* Đậm hơn để nổi bật */
+    font-size: 16px; /* Điều chỉnh kích thước chữ cho cân đối */
+    font-family: 'Open Sans', sans-serif; /* Font chữ mới cho các liên kết */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Hiệu ứng mượt */
+    text-transform: capitalize; /* Viết hoa chữ cái đầu */
+}
+
+nav a:hover {
+    color: white; /* Màu trắng khi hover */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Tạo hiệu ứng sáng mạnh hơn */
+}
+
+/* Form tìm kiếm */
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+form input[type="text"] {
+    width: 350px;
+    padding: 12px 15px;
+    border: 2px solid #ced4da;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px; /* Điều chỉnh kích thước chữ trong ô tìm kiếm */
+    font-family: 'Open Sans', sans-serif;
+    color: #495057;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    padding: 12px 18px;
+    background-color: #007bff; /* Màu xanh lá */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-left: 10px;
+    font-size: 16px; /* Cân đối cỡ chữ nút */
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; /* Đậm hơn để tạo sự nổi bật */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #218838; /* Màu tối hơn khi hover */
+    transform: scale(1.05);
+}
+
+/* Bảng dữ liệu */
+table {
+    width: 1510px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif; /* Đảm bảo font chữ thống nhất */
+}
+
+table th, table td {
+    padding: 12px; /* Giảm padding để bảng gọn gàng */
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 15px; /* Cân đối kích thước chữ bảng */
+    letter-spacing: 0.5px; /* Thêm khoảng cách giữa các ký tự */
+}
+
+table th {
+    background-color: #007bff; /* Nền tiêu đề */
+    color: white;
+    font-weight: 600; /* Đậm hơn để nổi bật */
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Nền xen kẽ */
+}
+
+table tr:hover {
+    background-color: #e2e6ea; /* Nền khi hover */
+}
+
+table td {
+    color: #495057;
+}
+
+/* Nút thao tác */
+table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+table a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Phần thông báo hoặc kết quả tìm kiếm */
+h3 {
+    text-align: center;
+    color: #007bff;
+    font-size: 20px; /* Điều chỉnh kích thước chữ cho phần thông báo */
+    margin: 20px 0;
+    font-family: 'Lora', serif; /* Font chữ sang trọng cho phần tiêu đề */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px; /* Giảm kích thước chữ cho phần mô tả */
+    line-height: 1.7; /* Tăng khoảng cách dòng cho dễ đọc */
+}
+
+/* Đáp ứng màn hình nhỏ */
+@media (max-width: 768px) {
+    form input[type="text"] {
+        width: 80%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 14px; /* Điều chỉnh kích thước chữ các liên kết nhỏ hơn trên thiết bị di động */
+    }
+}

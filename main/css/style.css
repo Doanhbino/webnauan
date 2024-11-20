@@ -1,0 +1,94 @@
+.description {
+    max-height: 4.5em;
+    /* Tương đương khoảng 3 dòng */
+    overflow: hidden;
+    /* Ẩn phần nội dung vượt quá */
+    display: -webkit-box;
+    /* Thiết lập kiểu hiển thị cho hỗ trợ nhiều dòng */
+    -webkit-line-clamp: 3;
+    /* Giới hạn số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    /* Đặt chiều hướng của box là dọc */
+}
+.description1 {
+    max-height: 1.5em;
+    /* Tương đương khoảng 3 dòng */
+    overflow: hidden;
+    /* Ẩn phần nội dung vượt quá */
+    display: -webkit-box;
+    /* Thiết lập kiểu hiển thị cho hỗ trợ nhiều dòng */
+    -webkit-line-clamp: 3;
+    /* Giới hạn số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    /* Đặt chiều hướng của box là dọc */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 0, 50px, 0, 0;
+  }
+
+  .uk-search-input {
+    width: 60%;
+    /* Make the search input wider */
+    font-size: 20px;
+    /* Increase font size */
+    padding: 15px;
+    /* Increase padding for a larger input */
+    border-radius: 25px;
+    /* Rounded corners for a softer look */
+    border: 2px solid #ccc;
+    /* Add a border */
+  }
+
+  .uk-search-input:focus {
+    border-color: #ff6f61;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove default outline */
+
+  }
+  /* footer  */
+  .footer-section {
+    background-color: #343a40; /* Nền tối */
+    color: #f8f9fa; /* Màu chữ nhạt */
+    padding: 40px 20px;
+}
+
+.footer-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.uk-card-media-top {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Định dạng cho ảnh món ăn */
+.uk-card-media-top img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hiệu ứng khi hover vào ảnh món ăn */
+.uk-card-media-top:hover img {
+    transform: scale(1.1);
+}
+.recipe-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;  /* Màu chữ trắng */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Tạo bóng cho chữ để dễ nhìn hơn */
+}
+
+/* Màu chữ khác cho tên công thức nếu muốn thay đổi */
+.recipe-title-blue {
+    color: #2196F3; /* Màu xanh dương */
+}
